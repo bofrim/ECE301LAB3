@@ -1,0 +1,4 @@
+#Tue Jan 23 18:36:35 MST 2018
+base.0=/Users/bradofrim/Library/Mobile Documents/com~apple~CloudDocs/School/Winter2018/ECE301/LAB/LAB3/lonelyTwitter/app/build/intermediates/transforms/dexMerger/debug/28
+path.0=classes.dex
+renamed.0=classes.dex
