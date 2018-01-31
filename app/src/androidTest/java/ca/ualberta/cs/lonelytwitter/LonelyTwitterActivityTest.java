@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2018.
+ * From The Lab of CMPUT 301
+ */
+
 package ca.ualberta.cs.lonelytwitter;
 
 import android.app.Activity;

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2018.
+ * From The Lab of CMPUT 301
+ */
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.io.BufferedReader;
@@ -26,6 +31,11 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * @Author Brad
+ *
+ * Implement the main activity for the lonley twitter app
+ */
 public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "tweets.sav";
@@ -35,7 +45,9 @@ public class LonelyTwitterActivity extends Activity {
 	private ArrayList<Tweet> tweetList;
 	private ArrayAdapter<Tweet> adapter;
 	
-	/** Called when the activity is first created. */
+	/**
+     * Called when the activity is first created.
+     */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -74,6 +86,9 @@ public class LonelyTwitterActivity extends Activity {
 		});
 	}
 
+    /**
+     * Called on start
+     */
 	@Override
 	protected void onStart() {
 
@@ -89,6 +104,9 @@ public class LonelyTwitterActivity extends Activity {
 
 	}
 
+    /**
+     * Load tweets from file
+     */
 	private void loadFromFile() {
 
 		try {
@@ -109,7 +127,10 @@ public class LonelyTwitterActivity extends Activity {
 		}
 
 	}
-	
+
+	/**
+     * Save tweets to a file
+	 */
 	private void saveInFile() {
 		try {
 
@@ -130,6 +151,9 @@ public class LonelyTwitterActivity extends Activity {
 		}
 	}
 
+    /**
+     * Called on instance destroy
+     */
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
