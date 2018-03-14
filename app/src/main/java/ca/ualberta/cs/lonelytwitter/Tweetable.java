@@ -4,8 +4,7 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 public interface Tweetable {
-    public String getMessage();
+    String getMessage(); // Refactor: Removed redundant public modifier
 
-    public Date getDate();
-
+    Date getDate(); // Refactor: Removed redundant public modifier
 }

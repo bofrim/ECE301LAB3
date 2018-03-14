@@ -18,7 +18,8 @@ public class ElasticsearchTweetController {
     private static JestDroidClient client;
 
     // TODO we need a function which adds tweets to elastic search
-    public static class AddTweetsTask extends AsyncTask<NormalTweet, Void, Void> {
+    // REFACTOR: made inner class private
+    private static class AddTweetsTask extends AsyncTask<NormalTweet, Void, Void> {
 
         @Override
         protected Void doInBackground(NormalTweet... tweets) {
@@ -40,7 +41,8 @@ public class ElasticsearchTweetController {
     }
 
     // TODO we need a function which gets tweets from elastic search
-    public static class GetTweetsTask extends AsyncTask<String, Void, ArrayList<NormalTweet>> {
+    // REFACTOR: made inner class private
+    private static class GetTweetsTask extends AsyncTask<String, Void, ArrayList<NormalTweet>> {
         @Override
         protected ArrayList<NormalTweet> doInBackground(String... search_parameters) {
             verifySettings();
@@ -62,8 +64,8 @@ public class ElasticsearchTweetController {
 
 
 
-
-    public static void verifySettings() {
+    // REFACTOR: made method private
+    private static void verifySettings() {
         if (client == null) {
             DroidClientConfig.Builder builder = new DroidClientConfig.Builder("http://cmput301.softwareprocess.es:8080");
             DroidClientConfig config = builder.build();

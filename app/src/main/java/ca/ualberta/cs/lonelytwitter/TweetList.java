@@ -2,10 +2,7 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-
-import static junit.framework.Assert.assertEquals;
+// REFACTOR: Removed unused imports
 
 /**
  * Created by bradofrim on 2018-02-13.

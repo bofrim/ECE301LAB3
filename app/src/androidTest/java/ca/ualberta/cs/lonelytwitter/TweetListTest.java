@@ -30,7 +30,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         assertTrue(tweets.hasTweet(tweet));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    // REFACTOR: Removed @Test annotation
     public void testAddTweetError() {
         TweetList tweets = new TweetList();
         Tweet tweet = new NormalTweet("adding tweet");
